@@ -14,8 +14,8 @@ function App() {
       <p style={{marginTop:'250px', fontSize:'2.5rem' , textAlign:'center', fontStyle:'italic'}}>"To reach real peace in the world, we will have to begin with the children."</p>
       <b><p>- Mahatma Gandhi</p></b>
       <div className='sign-up-field'>
-      <div>To continue for the cause, </div>
-      <a className="sign-up-btn">Sign Up!</a>
+      <div className="log w3-animate-bottom" style={{color:"black"}}>TO CONTINUE FOR THE CAUSE -  </div>
+      <a className="sign-up-btn">SIGN UP!</a>
      </div>
      </div>
 

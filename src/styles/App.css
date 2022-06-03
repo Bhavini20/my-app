@@ -11,6 +11,9 @@
   pointer-events: none;
 }
 
+.log{
+  background-color: linear-gradient( rgba(20, 16, 16, 0.6)) ;
+}
 
 
 
@@ -49,10 +52,11 @@
   text-decoration: none;
   font-family: 'Montserrat', sans-serif; font-weight:400;
   text-align: center;
-  width: 12rem;
-  font-size: 2rem;
+  margin: 0.8rem 0.4rem;
+  width: 10rem;
+  font-size: 1.5rem;
   border: 1px solid black;
-  border-radius: 10%;
+  border-radius: 1REM;
   background-color: rgba(37, 36, 36, 0.911);
   color: white;
   cursor: pointer;
