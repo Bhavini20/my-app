@@ -1,76 +1,74 @@
-import './Home.css';
+import Card from './components/Card';
+import './styles/Home.css';
 
 function Home()
 {
     return(
-        <ul class="cards">
+        <ul className="cards">
         <li>
-          <a href="" className="card">
-            <img src="https://i.imgur.com/oYiTqum.jpg" class="card__image" alt="" />
-            <div class="card__overlay">
-              <div class="card__header">
-                <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
-                <img class="card__thumb" src="https://i.imgur.com/7D7I6dI.png" alt="" />
-                <div class="card__header-text">
-                  <h3 class="card__title">Jessica Parker</h3>            
-                  <span class="card__status">1 hour ago</span>
-                </div>
-              </div>
-              <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
-            </div>
-          </a>      
+        <Card 
+          cardImage={"https://i.imgur.com/oYiTqum.jpg"}
+          cardThumb={"https://i.imgur.com/7D7I6dI.png"}
+          cardTitle={"Jessica Parker"}
+          cardStatus={"1 hour ago"}
+          cardDesc={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?"}
+        />
         </li>
         <li>
-          <a href="" class="card">
-            <img src="https://i.imgur.com/2DhmtJ4.jpg" class="card__image" alt="" />
-            <div class="card__overlay">        
-              <div class="card__header">
-                <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                 
-                <img class="card__thumb" src="https://i.imgur.com/sjLMNDM.png" alt="" />
-                <div class="card__header-text">
-                  <h3 class="card__title">kim Cattrall</h3>
-                  <span class="card__status">3 hours ago</span>
-                </div>
-              </div>
-              <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
-            </div>
-          </a>
+        <Card 
+          cardImage={"https://i.imgur.com/2DhmtJ4.jpg"}
+          cardThumb={"https://i.imgur.com/sjLMNDM.png"}
+          cardTitle={"kim Cattrall"}
+          cardStatus={"3 hours ago"}
+          cardDesc={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?"}
+        />
         </li>
         <li>
-          <a href="" class="card">
-            <img src="https://i.imgur.com/oYiTqum.jpg" class="card__image" alt="" />
-            <div class="card__overlay">
-              <div class="card__header">
-                <svg className="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
-                <img class="card__thumb" src="https://i.imgur.com/7D7I6dI.png" alt="" />
-                <div class="card__header-text">
-                  <h3 class="card__title">Jessica Parker</h3>
-                  <span class="card__tagline">Lorem ipsum dolor sit amet consectetur</span>            
-                  <span class="card__status">1 hour ago</span>
-                </div>
-              </div>
-              <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
-            </div>
-          </a>
+        <Card 
+          cardImage={"https://i.imgur.com/oYiTqum.jpg"}
+          cardThumb={"https://i.imgur.com/7D7I6dI.png"}
+          cardTitle={"Jessica Parker"}
+          cardStatus={"1 hour ago"}
+          cardDesc={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?"}
+        />
         </li>
         <li>
-          <a href="" class="card">
-            <img src="https://i.imgur.com/2DhmtJ4.jpg" class="card__image" alt="" />
-            <div class="card__overlay">
-              <div class="card__header">
-                <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                 
-                <img class="card__thumb" src="https://i.imgur.com/sjLMNDM.png" alt="" />
-                <div class="card__header-text">
-                  <h3 class="card__title">kim Cattrall</h3>
-                  <span class="card__status">3 hours ago</span>
-                </div>          
-              </div>
-              <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
-            </div>
-          </a>
-        </li>    
+        <Card 
+          cardImage={"https://i.imgur.com/2DhmtJ4.jpg"}
+          cardThumb={"https://i.imgur.com/sjLMNDM.png"}
+          cardTitle={"kim Cattrall"}
+          cardStatus={"3 hours ago"}
+          cardDesc={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?"}
+        />
+        </li>
       </ul>
     )
 }
 
 export default  Home
+
+
+/*
+
+Benefit of using a Card component instead of hard-coding:
+
+From backend, we usually get an array of objects, which might look like:
+[
+  {
+    name: abc,
+    phone: 123
+  },
+  {
+    name: xyz,
+    phone: 345,
+  },
+  ...
+]
+
+By using components, a simple map() function(equivalent to a for loop) 
+can be used to create component of each object of array
+Eg:
+
+return <div> array.map((object)=>{return <Card name={object.name} phone={object.phone}>}</div>
+
+*/
