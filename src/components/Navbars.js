@@ -1,14 +1,14 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import Navbar from 'react-bootstrap/Navbar';
 import { Container, Nav, NavDropdown, NavLink } from 'react-bootstrap';
-
+import "../styles/navbar.css"
 
 function Navbars (){
   const sty = {color:'white', fontSize:'1rem'}
   return(
-    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed='top'>
+    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed='top' className="nav-bar">
   <Container>
-  <Navbar.Brand href="#home">Sahyog</Navbar.Brand>
+  <Navbar.Brand href="#home" class="nav-brand">Sahyog</Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="me-auto">
