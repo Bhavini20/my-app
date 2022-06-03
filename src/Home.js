@@ -11,7 +11,7 @@ function Home()
           cardThumb={"https://i.imgur.com/7D7I6dI.png"}
           cardTitle={"Jessica Parker"}
           cardStatus={"1 hour ago"}
-          cardDesc={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?"}
+          cardDesc={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperkjkjkjkiores, blanditiis?"}
         />
         </li>
         <li>
